@@ -218,3 +218,105 @@ Stack trace:
 REQUEST_URI=/trackstar/index.php?r=issue/index&pid=1
 HTTP_REFERER=http://yii-book.local/trackstar/index.php?r=issue/view&id=1
 ---
+2014/02/04 20:55:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /var/www/yii-book/trackstar/protected/controllers/IssueController.php:60
+Stack trace:
+#0 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yiiframework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yiiframework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yiiframework/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yiiframework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yiiframework/framework/web/CWebApplication.php(282): CController->run('admin')
+#9 /var/www/yiiframework/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/admin')
+#10 /var/www/yiiframework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/yii-book/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/admin
+HTTP_REFERER=http://yii-book.local/trackstar/index.php?r=site/login
+---
+2014/02/04 20:57:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /var/www/yii-book/trackstar/protected/controllers/IssueController.php:60
+Stack trace:
+#0 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yiiframework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yiiframework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yiiframework/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yiiframework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yiiframework/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/yiiframework/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 /var/www/yiiframework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/yii-book/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://yii-book.local/trackstar/index.php?r=issue/view&id=2
+---
+2014/02/04 20:59:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /var/www/yii-book/trackstar/protected/controllers/IssueController.php:60
+Stack trace:
+#0 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yiiframework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yiiframework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yiiframework/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yiiframework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yiiframework/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/yiiframework/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 /var/www/yiiframework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/yii-book/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://yii-book.local/trackstar/index.php?r=issue/update&id=1
+---
+2014/02/04 20:59:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Must specify a project before performing this action.' in /var/www/yii-book/trackstar/protected/controllers/IssueController.php:60
+Stack trace:
+#0 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yiiframework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yiiframework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yiiframework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yiiframework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yiiframework/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yiiframework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yiiframework/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/yiiframework/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 /var/www/yiiframework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/yii-book/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/trackstar/index.php?r=issue/index
+HTTP_REFERER=http://yii-book.local/trackstar/index.php?r=issue/update&id=1
+---
+2014/02/04 21:53:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/yiiframework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yiiframework/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /var/www/yiiframework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii-book/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trackstar/index.php?r=user
+---
+2014/02/05 22:09:53 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "validatePassword".' in /var/www/yiiframework/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/yiiframework/framework/db/ar/CActiveRecord.php(227): CComponent->__call('validatePasswor...', Array)
+#1 /var/www/yii-book/trackstar/protected/components/UserIdentity.php(17): CActiveRecord->__call('validatePasswor...', Array)
+#2 /var/www/yii-book/trackstar/protected/components/UserIdentity.php(17): User->validatePassword('test1')
+#3 /var/www/yii-book/trackstar/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#4 /var/www/yiiframework/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#5 /var/www/yiiframework/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /var/www/yiiframework/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#7 /var/www/yii-book/trackstar/protected/controllers/SiteController.php(96): CModel->validate()
+#8 /var/www/yiiframework/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#9 /var/www/yiiframework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yiiframework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/yiiframework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yiiframework/framework/web/CWebApplication.php(282): CController->run('login')
+#13 /var/www/yiiframework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 /var/www/yiiframework/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/yii-book/trackstar/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trackstar/index.php?r=site/login
+HTTP_REFERER=http://yii-book.local/trackstar/index.php?r=site/login
+---

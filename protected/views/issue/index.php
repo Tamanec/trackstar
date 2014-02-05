@@ -1,14 +1,15 @@
 <?php
 /* @var $this IssueController */
 /* @var $dataProvider CActiveDataProvider */
+/* @var $context Project */
 
 $this->breadcrumbs=array(
 	'Issues',
 );
 
 $this->menu=array(
-	array('label'=>'Create Issue', 'url'=>array('create')),
-	array('label'=>'Manage Issue', 'url'=>array('admin')),
+	array('label'=>'Create Issue', 'url'=>array('create', 'pid' => $context->id)),
+	array('label'=>'Manage Issue', 'url'=>array('admin', 'pid' => $context->id)),
 );
 ?>
 

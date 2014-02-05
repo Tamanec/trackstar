@@ -3,16 +3,16 @@
 /* @var $model Issue */
 
 $this->breadcrumbs=array(
-	'Issues'=>array('index'),
-	$model->name=>array('view','id'=>$model->id),
+	'Issues'=>array('index', 'pid' => $model->project->id),
+	$model->name=>array('view','id'=>$model->id, 'pid' => $model->project->id),
 	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'List Issue', 'url'=>array('index')),
-	array('label'=>'Create Issue', 'url'=>array('create')),
-	array('label'=>'View Issue', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Issue', 'url'=>array('admin')),
+	array('label'=>'List Issue', 'url'=>array('index', 'pid' => $model->project->id)),
+	array('label'=>'Create Issue', 'url'=>array('create', 'pid' => $model->project->id)),
+	array('label'=>'View Issue', 'url'=>array('view', 'id'=>$model->id, 'pid' => $model->project->id)),
+	array('label'=>'Manage Issue', 'url'=>array('admin', 'pid' => $model->project->id)),
 );
 ?>
 

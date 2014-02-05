@@ -19,8 +19,35 @@
  * @property Issue[] $issues1
  * @property Project[] $tblProjects
  */
-class User extends CActiveRecord
+class User extends TrackStarActiveRecord
 {
+
+    public $password_repeat;
+
+    public function validatePassword($password)
+    {
+        return $this->password == $this->hashPassword($password);
+    }
+
+    /**
+     * apply a hash on the password before we store it in the database
+     */
+    protected function afterValidate()
+    {
+        parent::afterValidate();
+        if(!$this->hasErrors())
+            $this->password = $this->hashPassword($this->password);
+    }
+    /**
+     * Generates the password hash.
+     * @param string password
+     * @return string hash
+     */
+    public function hashPassword($password)
+    {
+        return md5($password);
+    }
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -37,10 +64,12 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, email, password', 'required'),
-			array('create_user_id, update_user_id', 'numerical', 'integerOnly'=>true),
+			array('username, email, password, password_repeat', 'required'),
 			array('username, email, password', 'length', 'max'=>255),
-			array('last_login_time, create_time, update_time', 'safe'),
+            array('username, email', 'unique'),
+            array('email', 'email'),
+            array('password', 'compare'),
+            array('password_repeat', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, username, email, password, last_login_time, create_time, create_user_id, update_time, update_user_id', 'safe', 'on'=>'search'),
