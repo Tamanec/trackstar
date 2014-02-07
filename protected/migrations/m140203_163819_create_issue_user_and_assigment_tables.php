@@ -105,16 +105,6 @@ class m140203_163819_create_issue_user_and_assigment_tables extends CDbMigration
             'username' => 'User Two',
             'password' => md5('test2')
         ));
-
-        $this->insert('tbl_project_user_assignment', array(
-            'project_id' => 1,
-            'user_id' => 1
-        ));
-
-        $this->insert('tbl_project_user_assignment', array(
-            'project_id' => 1,
-            'user_id' => 2
-        ));
     }
 
     public function safeDown()

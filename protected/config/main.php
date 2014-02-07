@@ -46,10 +46,6 @@ return array(
 			),
 		),
 		*/
-		/*'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),*/
-		// uncomment the following to use a MySQL database
 
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=track_star',
@@ -58,6 +54,14 @@ return array(
 			'password' => '121131',
 			'charset' => 'utf8',
 		),
+
+        'authManager' => array(
+            'class' => 'CDbAuthManager',
+            'connectionId' => 'db',
+            'itemTable' =>'tbl_auth_item',
+            'itemChildTable' =>'tbl_auth_item_child',
+            'assignmentTable' =>'tbl_auth_assignment',
+        ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
