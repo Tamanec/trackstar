@@ -7,12 +7,12 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
+          <root url="file:///usr/share/php/yiiframework" />
           <root url="file:///usr/share/php/PHPUnit" />
-          <root url="file://$MODULE_DIR$/../../yiiframework/framework" />
         </CLASSES>
         <SOURCES>
+          <root url="file:///usr/share/php/yiiframework" />
           <root url="file:///usr/share/php/PHPUnit" />
-          <root url="file://$MODULE_DIR$/../../yiiframework/framework" />
         </SOURCES>
       </library>
     </orderEntry>
